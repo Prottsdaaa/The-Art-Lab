@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+    <style>
+        /* Basic Phonepe styles for form layout */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: brown;
+        }
+
+       
+    </style>
+</head>
+<body style="background-color: beige;">
+    <br>
+    <hr style="color: #010101;" width="80%">
+    <br><br><br>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <form action="paymentconfirm.html">
+            <div class="form-group">
+                <label for="name">Cardholder Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="exp-date">Expiration Date</label>
+                <input type="text" id="exp-date" name="exp-date" placeholder="MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount (&#8377;)</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="currency">Currency</label>
+                <select id="currency" name="currency">
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <button type="submit">Submit Payment</button>
+            &nbsp;
+            <button type="reset">Reset</button>
+        </form>
+  <br><br>
+  
+ 
+</body>
+</html>

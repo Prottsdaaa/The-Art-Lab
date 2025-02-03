@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Participation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .event {
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+        *{
+        background-color: azure ;
+        }
+        .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+        }
+        
+.button1:hover {
+  background-color: green;
+  color: white;
+}
+    </style>
+</head>
+<body>
+        <h1>Event Participation</h1>
+
+        <form action="submit_participation.html" >
+            <ul class="event-list">
+                <li class="event">
+                    <input type="checkbox" id="event1" name="events[]" value="event1">
+                    <label for="event1">Event 1: Art Exhibition</label>
+                    <ul>
+                        <li>Date: January 15, 2023</li>
+                        <li>Time: 6:00 PM - 8:00 PM</li>
+                        <li>Location: Gallery Hall</li>
+                    </ul>
+                </li>
+    
+                <li class="event">
+                    <input type="checkbox" id="event2" name="events[]" value="event2">
+                    <label for="event2">Event 2: Art Workshop</label>
+                    <ul>
+                        <li>Date: February 5, 2023</li>
+                        <li>Time: 2:00 PM - 4:00 PM</li>
+                        <li>Location: Creative Studio</li>
+                    </ul>
+                </li>
+    
+            </ul>
+    
+            <button type="submit" class="button button1">Submit Participation</button>
+        </form>
+    
+
+</body>
+</html>

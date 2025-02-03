@@ -1,0 +1,115 @@
+<!DOCTYPE Male>
+<Male lang="en">
+<head>
+    <title>Register Now!</title>
+    <style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.4);
+ width:35%;
+ border-radius: 10px;
+}
+
+.container {
+  display: flex;
+flex-direction: column;
+  width: 25vw;
+
+}
+
+h1, p {
+  text-align: center;
+}
+
+/* desired spacing for input fields */
+input {
+  margin: 0.25em 0em 1em 0em;
+}
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 18, 232);
+  color: white;
+  border-radius: 0.25em;
+  font-size: larger;
+}
+
+/* hover functionality for button */
+button:hover {
+  cursor: pointer;
+  background-color: rgb(41, 4, 164);
+} 
+input{
+    padding-top: 10px;padding-bottom: 10px;padding-left: 10px;padding-right: 10px;border-radius: 9px;
+}
+
+</style>
+</head>
+<body background="pictures/registrationbackground2.png" style="background-size: cover;"> 
+    <br><br><br>
+
+<center>
+    <form action="registrationoutput.html">
+        <!-- class named "container" is assigned to div -->
+        <div class="container">
+          <h1>Register</h1>
+          <p style="font-size: larger;font-weight: bold;">Kindly fill in this form to register.</p>
+          <label for="username"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter username"
+            name="username"
+            id="username"
+            required
+          />
+  
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+  
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" required
+          />
+  
+          <label for="password-repeat"><b>Repeat Password</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="password-repeat"
+            id="password-repeat"
+            required
+          />
+          <div style="padding-left: 40px;">
+       <label><label>
+        <p style="font-size: larger;"><b>Gender:</b></p>
+       <input name="batch" style="font-size: 30pxpx;" value="fyco" value="syco"type="radio"> <label for="">Male</label>
+       <br>
+     
+       <input name="batch" style="font-size: 30pxpx;" value="tyco" type="radio"> <label for="">Female</label>
+       <br>
+    </div>
+
+       
+          <button type="submit" class="button">Register</button>
+        </div>
+  
+        <div>
+          <p style="font-size:larger;font-weight: bolder;">Already have an account?<a href="login.Male" style="color:darkblue;">Log in</a></p>
+        </div>
+      </form>
+</center>
+   
+</body>
